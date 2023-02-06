@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ <!--  this is our beans -->
+ <bean class="com.bitlabs.ref.Patient" name="patientref">
+ <property name="pid" value="123"/>
+ <property name="pname" value="kumar"/>
+ </bean>
+ <bean class="com.bitlabs.ref.History" name="historyref">
+ <property name="hname" value="Arogya hospital"/>
+    <!-- <property name="ob">
+ <ref bean="patientref"/>
+ </property>
+  -->
+  <property name="ob" ref="patientref"/>
+
+ 
+ 
+ </bean>
+
+ </beans>
