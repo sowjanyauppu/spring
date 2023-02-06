@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.bitlabs.reference.Address" name="address">
+ 
+ <constructor-arg value="LIC Colony"></constructor-arg>
+ <constructor-arg value="vijayawada"></constructor-arg>
+ <constructor-arg value="Andhra Pradesh"></constructor-arg>
+ <constructor-arg value="India"></constructor-arg>
+ </bean>
+ <bean class="com.bitlabs.reference.Employee" name="employee">
+ 
+ <constructor-arg value="101" type="int"></constructor-arg>
+ <constructor-arg value="Harish"></constructor-arg>
+ 
+ <constructor-arg ref="address"></constructor-arg>
+ </bean>
+ 
+ 
+ 
+ </beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.bitlabs.collections.Locations" name="location">
+ <!--  <constructor-arg>
+ <value>101</value>
+ </constructor-arg>
+ -->
+ <constructor-arg value="India"></constructor-arg>
+ <constructor-arg>
+ <list>
+ <value>AP</value>
+ <value>Tamilnadu</value>
+ <value>Kerala</value>
+  </list>
+ </constructor-arg>
+ <constructor-arg>
+ <set>
+ <value>vizag</value>
+ <value>vijayawada</value>
+ <value>Nellore</value>
+ <value>Tirupathi</value>
+ </set>
+ </constructor-arg>
+ 
+ <constructor-arg>
+ <map>
+ <entry key="AP" value="vijayawada"/>
+ <entry key="Kerala" value="kochi"/>
+ <entry key="Tamilnadu" value="chennai"/>
+ </map>
+ </constructor-arg>
+ </bean>
+ 
+ 
+ </beans>
